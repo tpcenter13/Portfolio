@@ -7,17 +7,17 @@ const Homepage = () => {
   const mainPortfolioItems = [
     {
       title: "Photo Editing",
-      image: "/src/assets/PhotoEditing.png",
+      image: "/public/assets/PhotoEditing.png",
       link: "#"
     },
     {
       title: "Figma",
-      image: "src/assets/Figma1.png",
+      image: "public/assets/Figma1.png",
       link: "#"
     },
     {
       title: "Basic Troubleshooting",
-      image: "src/assets/Troubleshooting.png",
+      image: "public/assets/Troubleshooting.png",
       link: "#"
     }
   ];
@@ -25,12 +25,12 @@ const Homepage = () => {
   const additionalProjects = [
     {
       title: "Work-Based Projects",
-      image: "src/assets/WorkBased.png",
+      image: "public/assets/WorkBased.png",
       link: "#"
     },
     {
       title: "Website Development",
-      image: "src/assets/WebsiteDev.png",
+      image: "public/assets/WebsiteDev.png",
       link: "#"
     }
   ];
@@ -70,7 +70,7 @@ const Homepage = () => {
         </div>
         <div className="mt-8 lg:mt-0">
           <img
-            src="/src/assets/ProfilePic.png"
+            src="/public/assets/ProfilePic.png"
             alt="Profile Picture"
             className="w-100 h-100 lg:w-100 lg:h-100 object-cover mx-auto"
           />
@@ -80,32 +80,32 @@ const Homepage = () => {
       <div className="bg-[#F94E41] p-6 mt-8 text-center">
         <div className="flex flex-wrap justify-center gap-8">
           <img
-            src="/src/assets/ReactIcon.png"
+            src="/public/assets/ReactIcon.png"
             alt="React Icon"
             className="w-24 h-24 lg:w-32 lg:h-32 object-cover"
           />
           <img
-            src="/src/assets/Tailwindcss.png"
+            src="/public/assets/Tailwindcss.png"
             alt="TailwindCSS"
             className="w-45 h-24 lg:w-45 lg:h-32 object-cover"
           />
           <img
-            src="/src/assets/Github.png"
+            src="/public/assets/Github.png"
             alt="GitHub"
             className="w-24 h-24 lg:w-32 lg:h-32 object-cover"
           />
           <img
-            src="/src/assets/Javascript.png"
+            src="/public/assets/Javascript.png"
             alt="JavaScript"
             className="w-24 h-27 lg:w-32 lg:h-27 object-cover"
           />
           <img
-            src="/src/assets/Figma.png"
+            src="/public/assets/Figma.png"
             alt="Figma"
             className="w-45 h-24 lg:w-45 lg:h-32 object-cover"
           />
           <img
-            src="/src/assets/Photoshop.png"
+            src="/public/assets/Photoshop.png"
             alt="Photoshop"
             className="w-24 h-24 lg:w-32 lg:h-32 object-cover"
           />
@@ -192,7 +192,7 @@ const Homepage = () => {
 <div className="mt-36 flex px-4 items-center flex-col lg:flex-row gap-10 container mx-auto"> {/* Added gap-8 */}
   <div className="flex-shrink-0 mb-8 lg:mb-0 lg:pl-20">
     <img
-      src="/src/assets/ContactProfile.png"
+      src="/public/assets/ContactProfile.png"
       alt="Contact Profile"
       className="w-100 h-100 object-cover lg:w-100 lg:h-100"
     />
