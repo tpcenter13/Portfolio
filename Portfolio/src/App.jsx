@@ -9,7 +9,7 @@ function App() {
         {/* Redirect "/" to "/Homepage" */}
         <Route path="/" element={<Navigate to="/Homepage" />} />
         <Route path="/Homepage" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </Router>
   );
