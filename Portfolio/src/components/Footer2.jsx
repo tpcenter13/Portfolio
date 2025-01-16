@@ -1,167 +1,148 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { CgProfile } from "react-icons/cg";
-import { IoLocationSharp } from "react-icons/io5";
+import { FaLinkedinIn } from "react-icons/fa";
 import { MdEmail, MdOutlinePhone } from "react-icons/md";
 
 const Footer2 = () => {
   return (
-    <div className="relative bg-[#282828] text-white"> {/* Updated the background color */}
+    <div className="relative bg-[#282828] text-white w-full">
       {/* Slanted Shape */}
       <div className="relative">
         <div className="absolute top-0 left-0 w-full h-[150px] bg-[#282828]" />
-
-        {/* Left Polygon */}
+        
+        {/* Left Polygon - Hidden on mobile */}
         <div
-          className="absolute top-[-60px] w-full h-[120px]"
+          className="absolute top-[-60px] w-full h-[120px] hidden md:block"
           style={{
-            background: "linear-gradient(to top, transparent 50%, #282828 50%)", // Updated to match footer background color
+            background: "linear-gradient(to top, transparent 50%, #282828 50%)",
             clipPath: "polygon(0 0, 50% 50%, 0 100%)",
           }}
-        ></div>
+        />
 
-        {/* Right Polygon */}
+        {/* Right Polygon - Hidden on mobile */}
         <div
-          className="absolute top-[-60px] w-full h-[120px]"
+          className="absolute top-[-60px] w-full h-[120px] hidden md:block"
           style={{
-            background: "linear-gradient(to top, transparent 50%, #282828 50%)", // Updated to match footer background color
+            background: "linear-gradient(to top, transparent 50%, #282828 50%)",
             clipPath: "polygon(100% 0, 100% 100%, 50% 50%)",
           }}
-        ></div>
-
-        {/* Logo */}
-        <div className="absolute top-[-19px] left-1/2 transform -translate-x-1/2">
-          <img src="/assets/SGlogo2.png" alt="Logo" className="w-[90px]" />
-        </div>
+        />
       </div>
-      <br />
-      <div className="my-8"></div> {/* Margin to replace <br /> */}
+
+      <div className="my-8" />
 
       {/* Main Footer Content */}
-      <div className="relative px-[7%] pt-10 pb-5 my-8">
-        <div className="flex flex-wrap gap-[8%]">
+      <div className="relative px-4 md:px-[7%] pt-10 pb-5 my-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Footer Description */}
-          <div className="w-full md:w-auto">
-            <p className="text-[13px]">
-              Explore a variety of online courses <br />
-              designed to help you develop <br />
-              new skills and advance your career. <br />
-              Start learning today, anytime, anywhere.
+          <div className="space-y-4">
+            <p className="text-[15px] leading-relaxed">
+              Showcasing innovative designs and
+              efficient web solutions. Explore my
+              projects and skills in UI/UX design,
+              web development, and e-commerce platforms.
+              Let's create something extraordinary!
             </p>
           </div>
 
-          {/* Course Categories */}
-          <div className="w-full md:w-auto mt-5 md:mt-0">
-            <h1 className="text-[20px] font-bold mb-4">COURSE CATEGORIES</h1>
-            <div className="flex flex-col gap-2 text-[15px]">
-              <a href="/wifi-security" className="text-white hover:underline">
-                Wifi Security
-              </a>
-              <a href="/password-security" className="text-white hover:underline">
-                Password Security
-              </a>
-              <a href="/data-protection" className="text-white hover:underline">
-                Data Protection
-              </a>
-              <a href="/cyberbullying" className="text-white hover:underline">
-                Cyberbullying
-              </a>
-            </div>
-          </div>
+{/* Course Categories */}
+<div className="space-y-4 ml-0 sm:ml-4 md:ml-8 lg:ml-11">
+  <h1 className="text-[20px] font-bold">COURSE CATEGORIES</h1>
+  <div className="flex flex-col gap-2 text-[15px]">
+    {[
+      ["Home", "/Homepage"],
+      ["About", "/About"],
+      ["Photo Editing", "/PhotoEditing"],
+      ["Figma", "/Figma"],
+      ["Basic Troubleshooting", "/BasicTroubleshooting"],
+      ["Work-Based Projects", "/WorkBasedProjects"],
+      ["Website Development", "/WebsiteDevelopment"]
+    ].map(([label, href]) => (
+      <a 
+        key={href} 
+        href={href} 
+        className="text-white hover:underline transition-colors duration-200"
+      >
+        {label}
+      </a>
+    ))}
+  </div>
+</div>
 
-          {/* Tags */}
-          <div className="w-full md:w-auto mt-5 md:mt-0">
-            <h1 className="text-[20px] font-bold mb-4">TAG</h1>
-            <div className="flex flex-col gap-2 text-[15px]">
-              <a href="/wifi-security" className="text-white hover:underline">
-                CYBERBULLYING
-              </a>
-              <a href="/password-security" className="text-white hover:underline">
-                PASSWORD SECURITY
-              </a>
-              <a href="/data-protection" className="text-white hover:underline">
-                DATA PROTECTION
-              </a>
-              <a href="/cyberbullying" className="text-white hover:underline">
-                WIFI
-              </a>
-            </div>
-          </div>
-
-          {/* Who's Online */}
-          <div className="w-full md:w-auto mt-5 md:mt-0">
-            <h1 className="text-[20px] font-bold mb-4">WHO'S ONLINE</h1>
-            <div className="flex flex-col gap-2 text-[15px]">
-              <CgProfile className="text-2xl" style={{ color: "#FE663C" }} />
-            </div>
-          </div>
+{/* Tools */}
+<div className="space-y-4 ml-0 sm:ml-6 md:ml-10 lg:ml-14">
+  <h1 className="text-[20px] font-bold">Tools</h1>
+  <div className="flex flex-col gap-2 text-[15px]">
+    {["React JS", "TailwindCss", "Github", "JavaScript", "Photoshop", "Figma"].map((tool) => (
+      <span 
+        key={tool} 
+        className="text-white font-semibold"
+      >
+        {tool}
+      </span>
+    ))}
+  </div>
+</div>
 
           {/* Connect with Us */}
-          <div className="w-full md:w-auto mt-5 md:mt-0">
-            <h1 className="text-[20px] font-bold mb-4">CONNECT WITH US!</h1>
-            <div className="flex flex-col gap-2 text-[15px]">
-              <div className="flex items-center">
-                <IoLocationSharp className="text-2xl" style={{ color: "#FE663C" }} />
-                <span className="ml-2">Los Angeles</span>
+          <div className="space-y-4">
+            <h1 className="text-[20px] font-bold">CONNECT WITH ME!</h1>
+            <div className="flex flex-col gap-4 text-[15px]">
+              <div className="flex items-center gap-4">
+                <MdEmail className="text-3xl text-white" />
+                <span className="break-all">Tpcenter09@gmail.com</span>
               </div>
-              <div className="flex items-center">
-                <MdEmail className="text-2xl" style={{ color: "#FE663C" }} />
-                <span className="ml-2">Los Angeles</span>
-              </div>
-              <div className="flex items-center">
-                <MdOutlinePhone className="text-2xl" style={{ color: "#FE663C" }} />
-                <span className="ml-2">Los Angeles</span>
+              <div className="flex items-center gap-4">
+                <MdOutlinePhone className="text-3xl text-white" />
+                <span>09495781900</span>
               </div>
             </div>
 
             {/* Socials */}
-            <div className="text-left mt-5">
-              <h1 className="text-[17px] font-bold mb-4">SOCIALS</h1>
-              <div className="flex gap-4 text-[20px]">
-                <div className="rounded-full p-2 bg-white">
-                  <FaFacebookF className="text-black" />
-                </div>
-                <div className="rounded-full p-2 bg-white">
-                  <FaInstagram className="text-black" />
-                </div>
+            <div className="space-y-4 mt-6">
+              <h1 className="text-[17px] font-bold">SOCIALS</h1>
+              <div className="flex items-center gap-4 text-[20px] flex-wrap">
                 <div className="rounded-full p-2 bg-white">
                   <FaLinkedinIn className="text-black" />
                 </div>
-                <div className="rounded-full p-2 bg-white">
-                  <FaYoutube className="text-black" />
-                </div>
+                <a 
+                  href="https://www.linkedin.com/in/kurt-steven-arciga-83a2302b3/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white hover:underline break-all"
+                >
+                  Kurt Steven Arciga | LinkedIn
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Spacing using margins */}
-      <div className="my-6"></div>
+      <div className="my-6" />
 
       {/* White Line */}
-      <hr className="h-[15px] border-t border-white my-4" />
+      <hr className="border-t border-white my-4" />
 
-      {/* Additional Section with Buttons */}
-      <div className="relative flex items-center justify-between mt-3 px-[5%]">
-        {/* Left Image */}
-        <div className="flex items-center">
-          <img src="/assets/sglogo.png" alt="Logo" className="w-[220px]" />
-        </div>
+      {/* Bottom Section */}
+      <div className="px-4 md:px-[5%] py-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          {/* Left Text */}
+          <div className="text-sm">
+            KURT ARCIGA
+          </div>
 
-        {/* Center Text */}
-        <div className="text-center flex-grow">
-          <p className="text-sm">SGCybersecurity • All rights reserved</p>
-        </div>
+          {/* Center Text */}
+          <div className="text-sm text-center">
+            KURT ARCIGA • All rights reserved
+          </div>
 
-        {/* Right Buttons */}
-        <div className="flex items-center space-x-6">
-          <button>HOME</button>
-          <button>ABOUT</button>
-          <button>CONTACT US</button>
+          {/* Right Navigation */}
+          <div className="flex items-center gap-6 text-sm">
+            <a href="/Homepage" className="text-white hover:underline">HOME</a>
+            <a href="/About" className="text-white hover:underline">ABOUT</a>
+          </div>
         </div>
       </div>
-      <br />
     </div>
   );
 };

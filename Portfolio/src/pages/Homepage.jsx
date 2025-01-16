@@ -8,17 +8,17 @@ const Homepage = () => {
     {
       title: "Photo Editing",
       image: "/assets/PhotoEditing.png",
-      link: "#"
+      link: "PhotoEditing"
     },
     {
       title: "Figma",
       image: "/assets/Figma1.png",
-      link: "#"
+      link: "Figma"
     },
     {
       title: "Basic Troubleshooting",
       image: "/assets/Troubleshooting.png",
-      link: "#"
+      link: "BasicTroubleshooting"
     }
   ];
 
@@ -26,12 +26,12 @@ const Homepage = () => {
     {
       title: "Work-Based Projects",
       image: "/assets/WorkBased.png",
-      link: "#"
+      link: "WorkBasedProjects"
     },
     {
       title: "Website Development",
       image: "/assets/WebsiteDev.png",
-      link: "#"
+      link: "WebsiteDevelopment"
     }
   ];
 
@@ -112,7 +112,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="text-center text-4xl lg:text-7xl font-extrabold mt-10">
+      <div className="text-center text-4xl lg:text-7xl font-extrabold mt-14">
         My Projects
       </div>
       <p className="text-lg lg:text-2xl mt-4 max-w-3xl mx-auto text-center">
@@ -164,7 +164,7 @@ const Homepage = () => {
 
   {/* Content Section */}
   <div className="content-section bg-[#282828] text-white p-8 text-center z-10 relative">
-  <h1 className="text-4xl font-bold mt-8">Contact Me!</h1>
+  <h1 className="text-5xl font-bold mt-8">Contact Me!</h1>
   <p className="mt-4 text-lg">Thank you for visiting my portfolio! If you'd like to get in touch or inquire about my work, please use the form below.<br/> Simply fill out your details and message, and I’ll make sure to respond to your email as soon as possible. I look forward to hearing from you!</p>
 </div>
 </div>
