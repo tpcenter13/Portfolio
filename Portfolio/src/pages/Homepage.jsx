@@ -207,12 +207,12 @@ const Homepage = () => {
     <div className="flex justify-between">
       <div className="w-full lg:w-1/2">
         <h3 className="text-lg font-semibold text-white">Phone Number</h3>
-        <p className="text-sm text-white">+1 (123) 456-7890</p> {/* Example phone number */}
+        <p className="text-sm text-white">+63 09495781900</p> {/* Example phone number */}
       </div>
 
       <div className="w-full lg:w-1/2">
         <h3 className="text-lg font-semibold text-white">Email</h3>
-        <p className="text-sm text-white">example@example.com</p> {/* Example email */}
+        <p className="text-sm text-white">Tpcenter09@gmail.com</p> {/* Example email */}
       </div>
     </div>
   </div>
