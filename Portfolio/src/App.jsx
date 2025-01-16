@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 
@@ -6,8 +6,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Homepage" element={<Homepage />} /> {/* Homepage at root */}
-        <Route path="/about" element={<About />} /> {/* About page */}
+        {/* Redirect "/" to "/Homepage" */}
+        <Route path="/" element={<Navigate to="/Homepage" />} />
+        <Route path="/Homepage" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
