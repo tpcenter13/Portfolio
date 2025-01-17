@@ -50,12 +50,12 @@ const Footer2 = () => {
   <div className="flex flex-col gap-2 text-[15px]">
     {[
       ["Home", "/"],
-      ["About", "/About"],
-      ["Photo Editing", "/PhotoEditing"],
-      ["Figma", "/Figma"],
-      ["Basic Troubleshooting", "/BasicTroubleshooting"],
-      ["Work-Based Projects", "/WorkBasedProjects"],
-      ["Website Development", "/WebsiteDevelopment"]
+      ["About", "/about"],
+      ["Photo Editing", "/photoEditing"],
+      ["Figma", "/figma"],
+      ["Basic Troubleshooting", "/basicTroubleshooting"],
+      ["Work-Based Projects", "/workBasedProjects"],
+      ["Website Development", "/websiteDevelopment"]
     ].map(([label, href]) => (
       <a 
         key={href} 

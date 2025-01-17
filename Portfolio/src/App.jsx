@@ -10,8 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/PhotoEditing" element={<PhotoEditing />} />
-        <Route path="/Figma" element={<Figma/>} />
+        <Route path="/photoEditing" element={<PhotoEditing />} />
+        <Route path="/figma" element={<Figma/>} />
       </Routes>
     </BrowserRouter>
   );
