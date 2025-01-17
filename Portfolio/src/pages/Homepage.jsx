@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Change this import
 import Header from '../components/Header';
 import Footer2 from '../components/Footer2';
-
 
 const Homepage = () => {
   const mainPortfolioItems = [
@@ -37,25 +37,23 @@ const Homepage = () => {
 
   const ProjectCard = ({ item }) => (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <div className="relative h-80">
-        <img 
-          src={item.image} 
-          alt={item.title}
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="p-6">
-        <h3 className="text-xl font-semibold mb-4 text-[#000000]">{item.title}</h3>
-        <a 
-          href={item.link}
-          className="inline-block text-[#CDA050] hover:text-[#ff6b5f] transition-colors duration-300"
-        >
-          Explore page →
-        </a>
-      </div>
+      <Link to={`/${item.link}`}>  {/* Change href to to */}
+        <div className="relative h-80">
+          <img 
+            src={item.image} 
+            alt={item.title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-semibold mb-4 text-[#000000]">{item.title}</h3>
+          <span className="inline-block text-[#CDA050] hover:text-[#ff6b5f] transition-colors duration-300">
+            Explore page →
+          </span>
+        </div>
+      </Link>
     </div>
   );
-
 
 
   return (

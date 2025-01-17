@@ -118,7 +118,7 @@ const Figma = () => {
       </div>
 
       {/* Link to Homepage */}
-      <div className="mt-16 flex justify-center mb-40 ml-[950px]">
+      <div className="mt-16 flex justify-center mb-40 md:ml-[950px] ml-4">
         <Link
           to="/"
           className="text-white underline text-base md:text-lg lg:text-xl font-semibold hover:text-gray-400"
