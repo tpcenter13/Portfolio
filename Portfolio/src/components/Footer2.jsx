@@ -49,7 +49,7 @@ const Footer2 = () => {
   <h1 className="text-[20px] font-bold">COURSE CATEGORIES</h1>
   <div className="flex flex-col gap-2 text-[15px]">
     {[
-      ["Home", "/Homepage"],
+      ["Home", "/"],
       ["About", "/About"],
       ["Photo Editing", "/PhotoEditing"],
       ["Figma", "/Figma"],

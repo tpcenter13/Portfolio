@@ -7,7 +7,7 @@ const Header = () => {
     <header className="bg-[#282828] text-white h-auto lg:h-36">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-36">
-          <a href="Homepage" className="text-3xl font-extrabold hover:text-gray-400 transition-colors">
+          <a href="/" className="text-3xl font-extrabold hover:text-gray-400 transition-colors">
             PORTFOLIO
           </a>
           
@@ -24,7 +24,7 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex space-x-8">
-            <a href="Homepage" className="hover:text-gray-400 text-2xl font-semibold transition-colors">
+            <a href="/" className="hover:text-gray-400 text-2xl font-semibold transition-colors">
               HOME
             </a>
             <a href="/About" className="hover:text-gray-400 text-2xl font-semibold transition-colors">
@@ -39,7 +39,7 @@ const Header = () => {
         >
           <nav className="flex flex-col space-y-4">
             <a 
-              href="Homepage" 
+              href="/" 
               className="hover:text-gray-400 text-2xl font-semibold text-center py-2 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >

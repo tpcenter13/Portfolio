@@ -46,11 +46,11 @@ const PhotoEditing = () => {
       </div>
 
       {/* Link to Homepage */}
-      <div className="mt-16 flex justify-center mb-40">
-        <Link to="/" className="text-white underline text-lg sm:text-xl font-semibold hover:text-gray-400">
-          Click here to go back Home
-        </Link>
-      </div>
+            <div className="mt-16 flex justify-center mb-40 ml-[950px]">
+              <Link to="/" className="text-white underline text-lg sm:text-xl font-semibold hover:text-gray-400">
+                Click here to go back Home
+              </Link>
+            </div>
 
       <Footer2 />
     </div>
