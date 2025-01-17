@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,13 +46,13 @@ const Header = () => {
             >
               HOME
             </a>
-            <a 
-              href="About" 
+            <Link 
+              to="/About" 
               className="hover:text-gray-400 text-2xl font-semibold text-center py-2 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               ABOUT
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
