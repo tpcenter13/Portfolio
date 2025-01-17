@@ -60,27 +60,30 @@ const About = () => {
     <div className="bg-[#161616] text-white min-h-screen">
       <Header />
 
-      {/* Profile Section */}
-      <div className="container mx-auto px-32 pt-24 lg:pt-36">
-        <div className="flex flex-col lg:flex-row items-center gap-10 lg:px-20">
-        <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
-    <img
-      src="/assets/ContactProfile.png"
-      alt="Contact Profile"
-      className="w-160 h-160 lg:w-160 lg:h-160 object-cover"
-    />
+{/* Profile Section */}
+<div className="container mx-auto px-4 sm:px-8 lg:px-32 pt-24 lg:pt-36">
+  <div className="flex flex-col lg:flex-row items-center gap-10 lg:px-20">
+    <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+      <img
+        src="/assets/ContactProfile.png"
+        alt="Contact Profile"
+        className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] lg:w-[40rem] lg:h-[40rem] object-cover rounded-3xl"
+      />
+    </div>
+
+    <div className="w-full lg:w-1/2 text-center lg:text-left">
+      <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold">Kurt Steven Good</h1>
+      <h1 className="text-4xl sm:text-5xl lg:text-9xl font-extrabold mt-2">ARCIGA</h1>
+      <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mt-4">
+        UI/UX Designer | Web Developer |<br className="hidden lg:block" />
+        Bridging Design and Functionality
+      </h2>
+    </div>
+  </div>
 </div>
-          
-          <div className="w-full lg:w-2/3 text-center lg:text-left ">
-            <h1 className="text-3xl lg:text-6xl font-extrabold">Kurt Steven Good</h1>
-            <h1 className="text-4xl lg:text-9xl font-extrabold mt-2">ARCIGA</h1>
-            <h2 className="text-xl lg:text-3xl font-semibold mt-4">
-              UI/UX Designer | Web Developer |<br className="hidden lg:block" /> 
-              Bridging Design and Functionality
-            </h2>
-          </div>
-        </div>
-      </div>
+
+
+
 
       {/* Education and Experience Section */}
       <div className="container mx-auto px-4 mt-20 lg:mt-28">

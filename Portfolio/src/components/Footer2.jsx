@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdEmail, MdOutlinePhone } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Footer2 = () => {
   return (
@@ -56,14 +57,14 @@ const Footer2 = () => {
       ["Basic Troubleshooting", "/basicTroubleshooting"],
       ["Work-Based Projects", "/workBasedProjects"],
       ["Website Development", "/websiteDevelopment"]
-    ].map(([label, href]) => (
-      <a 
-        key={href} 
-        href={href} 
+    ].map(([label, to]) => (
+      <Link 
+        key={to} 
+        to={to} 
         className="text-white hover:underline transition-colors duration-200"
       >
         {label}
-      </a>
+      </Link>
     ))}
   </div>
 </div>
@@ -138,8 +139,8 @@ const Footer2 = () => {
 
           {/* Right Navigation */}
           <div className="flex items-center gap-6 text-sm">
-            <a href="/Homepage" className="text-white hover:underline">HOME</a>
-            <a href="/About" className="text-white hover:underline">ABOUT</a>
+            <Link to="/Homepage" className="text-white hover:underline">HOME</Link>
+            <Link to="/About" className="text-white hover:underline">ABOUT</Link>
           </div>
         </div>
       </div>

@@ -8,17 +8,17 @@ const Homepage = () => {
     {
       title: "Photo Editing",
       image: "/assets/PhotoEditing.png",
-      link: "PhotoEditing"
+      link: "photoEditing"
     },
     {
       title: "Figma",
       image: "/assets/Figma1.png",
-      link: "Figma"
+      link: "figma"
     },
     {
       title: "Basic Troubleshooting",
       image: "/assets/Troubleshooting.png",
-      link: "BasicTroubleshooting"
+      link: "basicTroubleshooting"
     }
   ];
 
@@ -26,12 +26,12 @@ const Homepage = () => {
     {
       title: "Work-Based Projects",
       image: "/assets/WorkBased.png",
-      link: "WorkBasedProjects"
+      link: "workBasedProjects"
     },
     {
       title: "Website Development",
       image: "/assets/WebsiteDev.png",
-      link: "WebsiteDevelopment"
+      link: "websiteDevelopment"
     }
   ];
 
