@@ -28,9 +28,10 @@ const Header = () => {
             <a href="/" className="hover:text-gray-400 text-2xl font-semibold transition-colors">
               HOME
             </a>
-            <a href="/About" className="hover:text-gray-400 text-2xl font-semibold transition-colors">
+            
+            <Link href="/about" className="hover:text-gray-400 text-2xl font-semibold transition-colors">
               ABOUT
-            </a>
+            </Link>
           </nav>
         </div>
 
@@ -47,7 +48,7 @@ const Header = () => {
               HOME
             </a>
             <Link 
-              to="/About" 
+              to="/about" 
               className="hover:text-gray-400 text-2xl font-semibold text-center py-2 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
