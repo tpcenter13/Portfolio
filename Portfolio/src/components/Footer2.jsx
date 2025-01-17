@@ -139,7 +139,7 @@ const Footer2 = () => {
 
           {/* Right Navigation */}
           <div className="flex items-center gap-6 text-sm">
-            <Link to="/Homepage" className="text-white hover:underline">HOME</Link>
+            <Link to="/" className="text-white hover:underline">HOME</Link>
             <Link to="/About" className="text-white hover:underline">ABOUT</Link>
           </div>
         </div>
