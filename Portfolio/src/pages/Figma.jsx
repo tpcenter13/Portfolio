@@ -105,7 +105,7 @@ const Figma = () => {
         </p>
 
         {/* Button */}
-        <div className="mt-6">
+        <div className="mt-6 mb-28">
           <a
             href="https://www.figma.com/proto/lcBl97ZOx9l80oo7sWKHGI/Thesis?node-id=107-211&p=f&t=wAOCzHRFttnwKUYI-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=107%3A211"
             target="_blank"
@@ -117,15 +117,7 @@ const Figma = () => {
         </div>
       </div>
 
-      {/* Link to Homepage */}
-      <div className="mt-16 flex justify-center mb-40 md:ml-[950px] ml-4">
-        <Link
-          to="/"
-          className="text-white underline text-base md:text-lg lg:text-xl font-semibold hover:text-gray-400"
-        >
-          Click here to go back Home
-        </Link>
-      </div>
+
 
       <Footer2 />
     </div>

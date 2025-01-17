@@ -41,16 +41,10 @@ const PhotoEditing = () => {
       </div>
 
       {/* Image Row 6 */}
-      <div className="mt-16 flex justify-center mb-9">
+      <div className="mt-16 flex justify-center mb-28">
         <img src="/assets/SgCybersecurityBG.png" alt="Image 1" className="w-full sm:w-2/4 lg:w-2/4 rounded-lg shadow-md" />
       </div>
 
-      {/* Link to Homepage */}
-      <div className="mt-16 flex justify-center mb-40 md:ml-[950px] ml-4">
-              <Link to="/" className="text-white underline text-lg sm:text-xl font-semibold hover:text-gray-400">
-                Click here to go back Home
-              </Link>
-            </div>
 
       <Footer2 />
     </div>
