@@ -7,7 +7,7 @@ import Basictroubleshooting from "./pages/BasicTroubleshooting"
 import WebsiteDevelopment from "./pages/WebsiteDevelopment"
 import WorkBasedProjects from "./pages/WorkBasedProjects"
 import ScrollToTop from "./components/ScrollToTop";
-
+import ContactSection from "./components/ContactSection";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <Route path="/basictroubleshooting" element={<Basictroubleshooting/>} />
         <Route path="/websitedevelopment" element={<WebsiteDevelopment/>} />
         <Route path="/workBasedProjects" element={<WorkBasedProjects/>} />
+        <Route path="/contactSection" element={<ContactSection/>} />
       </Routes>
     </BrowserRouter>
   );
