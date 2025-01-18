@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';  // Change this import
 import Header from '../components/Header';
 import Footer2 from '../components/Footer2';
+import ContactSection from '../components/ContactSection';
 
 const Homepage = () => {
   const mainPortfolioItems = [
@@ -186,88 +187,8 @@ const Homepage = () => {
 
 
 
+<ContactSection/>
 
-<div className="mt-36 flex px-4 items-center flex-col lg:flex-row gap-10 container mx-auto"> {/* Added gap-8 */}
-  <div className="flex-shrink-0 mb-8 lg:mb-0 lg:pl-20">
-    <img
-      src="/assets/ContactProfile.png"
-      alt="Contact Profile"
-      className="w-100 h-100 object-cover lg:w-100 lg:h-100"
-    />
-  </div>
-
-  <div className="w-full lg:w-1/2 px-4 lg:px-16 bg-[#F94E41] rounded-lg h-[645px]"> {/* Set custom height */}
-  {/* Contact Me Title */}
-  <h2 className="text-3xl font-semibold text-white mt-20">Contact Me!</h2>
-
-  {/* Phone number and Email description */}
-  <div className="mt-4 mb-6">
-    <div className="flex justify-between">
-      <div className="w-full lg:w-1/2">
-        <h3 className="text-lg font-semibold text-white">Phone Number</h3>
-        <p className="text-sm text-white">+63 09495781900</p> {/* Example phone number */}
-      </div>
-
-      <div className="w-full lg:w-1/2">
-        <h3 className="text-lg font-semibold text-white">Email</h3>
-        <p className="text-sm text-white">Tpcenter09@gmail.com</p> {/* Example email */}
-      </div>
-    </div>
-  </div>
-
-  {/* Form */}
-  <form className="mt-4 space-y-4">
-    <div>
-      <label htmlFor="name" className="block text-sm font-medium text-white">
-        Name
-      </label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        required
-        className="mt-1 block w-full px-3 py-2 text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-      />
-    </div>
-
-    <div>
-      <label htmlFor="email" className="block text-sm font-medium text-white">
-        Email
-      </label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        className="mt-1 block w-full px-3 py-2 text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-      />
-    </div>
-
-    <div>
-      <label htmlFor="message" className="block text-sm font-medium text-white">
-        Message
-      </label>
-      <textarea
-        id="message"
-        name="message"
-        rows="4"
-        required
-        className="mt-1 block w-full px-3 py-2 text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-      ></textarea>
-    </div>
-
-    <div>
-      <button
-        type="submit"
-        className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
-      >
-        Send Message
-      </button>
-    </div>
-  </form>
-</div>
-
-</div>
 
 
 
