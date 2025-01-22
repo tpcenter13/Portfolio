@@ -33,8 +33,16 @@ const Homepage = () => {
       title: "Website Development",
       image: "/assets/WebsiteDev.png",
       link: "websiteDevelopment"
-    }
+    },
   ];
+
+  const sideProjects = [
+    {
+      title: "Mini Projects",
+      image: "/assets/WebsiteDev.png",
+      link: "miniprojects"
+    }
+  ]
 
   const ProjectCard = ({ item }) => (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -134,8 +142,18 @@ const Homepage = () => {
             <ProjectCard key={index} item={item} />
           ))}
         </div>
-      </div>  
+      </div>
 
+{/* Third Grid - Side Projects */}
+<div className="container mx-auto px-4">
+  <div className="mt-16 grid grid-cols-1 gap-8 justify-center">
+    {sideProjects.map((item, index) => (
+      <div className="mx-auto w-[445px]">  {/* Adjust max width */}
+        <ProjectCard key={index} item={item} />
+      </div>
+    ))}
+  </div>
+</div>
 
       <div className="relative bg-[#282828] text-white mt-36">
   {/* Slanted Shape */}

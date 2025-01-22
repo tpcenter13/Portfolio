@@ -8,6 +8,7 @@ import WebsiteDevelopment from "./pages/WebsiteDevelopment"
 import WorkBasedProjects from "./pages/WorkBasedProjects"
 import ScrollToTop from "./components/ScrollToTop";
 import ContactSection from "./components/ContactSection";
+import Miniprojects from "./pages/Miniprojects";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/websitedevelopment" element={<WebsiteDevelopment/>} />
         <Route path="/workBasedProjects" element={<WorkBasedProjects/>} />
         <Route path="/contactSection" element={<ContactSection/>} />
+        <Route path="/miniprojects" element={<Miniprojects/>} />
       </Routes>
     </BrowserRouter>
   );
