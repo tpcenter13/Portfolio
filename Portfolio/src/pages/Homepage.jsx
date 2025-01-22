@@ -39,7 +39,7 @@ const Homepage = () => {
   const sideProjects = [
     {
       title: "Mini Projects",
-      image: "/assets/WebsiteDev.png",
+      image: "/assets/miniproj2.png",
       link: "miniprojects"
     }
   ]
