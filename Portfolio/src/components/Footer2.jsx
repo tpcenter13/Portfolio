@@ -56,7 +56,8 @@ const Footer2 = () => {
       ["Figma", "/figma"],
       ["Basic Troubleshooting", "/basicTroubleshooting"],
       ["Work-Based Projects", "/workBasedProjects"],
-      ["Website Development", "/websiteDevelopment"]
+      ["Website Development", "/websiteDevelopment"],
+      ["Mini Projects", "/miniprojects"]
     ].map(([label, to]) => (
       <Link 
         key={to} 

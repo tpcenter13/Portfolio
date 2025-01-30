@@ -145,15 +145,16 @@ const Homepage = () => {
       </div>
 
 {/* Third Grid - Side Projects */}
-<div className="container mx-auto px-4">
-  <div className="mt-16 grid grid-cols-1 gap-8 justify-center">
-    {sideProjects.map((item, index) => (
-      <div className="mx-auto w-[445px]">  {/* Adjust max width */}
-        <ProjectCard key={index} item={item} />
-      </div>
-    ))}
-  </div>
+<div className="container mx-auto px-4 flex flex-wrap justify-center gap-8 mt-16">
+  {sideProjects.map((item, index) => (
+    <div key={index} className="w-full max-w-[445px]">
+      <ProjectCard item={item} />
+    </div>
+  ))}
 </div>
+
+
+
 
       <div className="relative bg-[#282828] text-white mt-36">
   {/* Slanted Shape */}
