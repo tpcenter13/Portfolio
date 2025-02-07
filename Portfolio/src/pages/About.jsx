@@ -23,7 +23,7 @@ const About = () => {
 
   const experienceData = [
     {
-      period: "2024, Nov / 2025, Jan",
+      period: "2024, Nov / 2025, Feb",
       role: "Insightz Technology Junior Web Developer"
     },
     {
@@ -41,7 +41,7 @@ const About = () => {
       "PHP/SQL",
       "HTML/CSS/JavaScript",
       "React.JS & Tailwind CSS",
-      "React Native"
+      "Next.JS"
     ],
     design: [
       "Photoshop",
