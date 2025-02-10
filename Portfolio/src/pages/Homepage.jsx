@@ -27,7 +27,7 @@ const Homepage = () => {
 
   const additionalProjects = [
     {
-      title: "Work-Based Projects (UI UX)",
+      title: "Work-Based (UI UX)",
       image: "/assets/WorkBased.png",
       link: "workBasedProjects"
     },

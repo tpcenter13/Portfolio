@@ -23,11 +23,11 @@ const About = () => {
 
   const experienceData = [
     {
-      period: "2024, Nov / 2025, Feb",
+      period: "2024, Dec 2 / 2025, Feb",
       role: "Insightz Technology Junior Web Developer"
     },
     {
-      period: "2024, Aug - Nov",
+      period: "2024, Aug 27 - Nov 27",
       role: "Insightz Technology Web Designer and UI UX Intern"
     },
     {

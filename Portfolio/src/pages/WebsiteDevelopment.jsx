@@ -24,8 +24,8 @@ const WebsiteDevelopment = () => {
           I specialize in frontend design and development. This project
           showcases not only my technical skills but also my creative side, as
           I was deeply involved in designing its UI/UX. From conceptualizing
-          user-friendly layouts to implementing them with tools like ReactJS,
-          JavaScript, Git, and TailwindCSS, I played a key role in shaping the
+          user-friendly layouts to implementing them with tools like NextJS,
+          TypeScript, Git, and TailwindCSS, I played a key role in shaping the
           overall design and functionality. This experience reflects my passion
           for creating seamless and visually appealing digital experiences.
         </p>
@@ -43,7 +43,7 @@ const WebsiteDevelopment = () => {
       {/* Description Section 2 */}
       <div className="mb-20 px-6 sm:px-12 md:px-20 lg:px-36 xl:px-48 text-center">
         <p className="text-lg md:text-xl lg:text-2xl font-normal text-white leading-relaxed">
-          For this project, we are using React JS for the front end. I am one 
+          For this project, we are using Next JS for the front end. I am one 
           of the key team members in charge of the design, and I also implement
           those designs into code to bring the visual concepts to life. This
           involves translating the UI/UX into a functional interface, ensuring

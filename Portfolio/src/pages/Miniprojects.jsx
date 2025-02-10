@@ -53,7 +53,7 @@ const Miniprojects = () => {
       {/* Button Section */}
       <div className="mt-6 mb-28 text-center">
         <a
-          href="https://shopping-website-77xw5n22k-kurt-steven-arcigas-projects.vercel.app/"
+          href="https://shopping-website-six-xi.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-red-500 text-white text-sm sm:text-base lg:text-lg font-medium py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-red-600 transition duration-300"
