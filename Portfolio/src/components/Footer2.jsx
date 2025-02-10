@@ -95,7 +95,7 @@ const Footer2 = () => {
               </div>
               <div className="flex items-center gap-4">
                 <MdOutlinePhone className="text-3xl text-white" />
-                <span>09495781900</span>
+                <span>0949-578-1900</span>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ const Footer2 = () => {
 
           {/* Center Text */}
           <div className="text-sm text-center">
-           All rights reserved
+           All rights reserved.
           </div>
 
           {/* Right Navigation */}
