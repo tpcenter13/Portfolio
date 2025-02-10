@@ -19,7 +19,7 @@ const WebsiteDevelopment = () => {
 
       {/* Description Section 1 */}
       <div className="mb-15 px-6 sm:px-12 md:px-20 lg:px-36 xl:px-48 text-center">
-        <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white leading-relaxed">
+        <p className="text-lg md:text-xl lg:text-2xl font-normal text-white leading-relaxed">
           In this section, you can explore my journey in web development, where
           I specialize in frontend design and development. This project
           showcases not only my technical skills but also my creative side, as
@@ -42,7 +42,7 @@ const WebsiteDevelopment = () => {
 
       {/* Description Section 2 */}
       <div className="mb-20 px-6 sm:px-12 md:px-20 lg:px-36 xl:px-48 text-center">
-        <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white leading-relaxed">
+        <p className="text-lg md:text-xl lg:text-2xl font-normal text-white leading-relaxed">
           For this project, we are using React JS for the front end. I am one 
           of the key team members in charge of the design, and I also implement
           those designs into code to bring the visual concepts to life. This
@@ -54,7 +54,7 @@ const WebsiteDevelopment = () => {
       {/* Button Section */}
       <div className="mt-6 mb-28 text-center">
         <a
-          href="https://sg-cybersecurity.vercel.app/"
+          href="https://sg-cybersecurity-2025.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-red-500 text-white text-sm md:text-base lg:text-lg font-medium py-2 px-4 md:py-3 md:px-6 rounded-full hover:bg-red-600 transition duration-300"

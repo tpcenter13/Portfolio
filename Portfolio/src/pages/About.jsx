@@ -72,7 +72,7 @@ const About = () => {
     </div>
 
     <div className="w-full lg:w-1/2 text-center lg:text-left">
-      <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold">Kurt Steven Good</h1>
+      <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold">Kurt Steven</h1>
       <h1 className="text-4xl sm:text-5xl lg:text-9xl font-extrabold mt-2">ARCIGA</h1>
       <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mt-4">
         UI/UX Designer | Web Developer |<br className="hidden lg:block" />
@@ -111,24 +111,33 @@ const About = () => {
           </div>
 
           {/* Experience Section */}
-          <div className="w-full lg:w-1/2">
-            <h2 className="text-3xl lg:text-4xl font-extrabold mb-8">Experience</h2>
-            <div className="relative">
-              <div className="bg-[#CDA050] p-6 lg:p-8 rounded-lg w-full">
-                {experienceData.map((item, index) => (
-                  <div key={index} className="flex items-start mb-8 last:mb-0">
-                    <div className="relative">
-                      <div className="absolute -left-1.5 mt-1.5 w-4 h-4 bg-white rounded-full"></div>
-                    </div>
-                    <div className="ml-8">
-                      <div className="text-lg font-semibold text-black">{item.period}</div>
-                      <div className="text-base text-black">{item.role}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+<div className="w-full lg:w-1/2">
+  <h2 className="text-3xl lg:text-4xl font-extrabold mb-8">Experience</h2>
+  <div className="relative">
+    <div className="bg-[#CDA050] p-4 sm:p-6 lg:p-8 rounded-lg w-full">
+      {experienceData.map((item, index) => (
+        <div key={index} className="flex items-start mb-6 sm:mb-8 last:mb-0">
+          <div className="relative flex-shrink-0">
+            {/* Combined line and circle element */}
+            <div className="relative w-4 h-4">
+              {/* Circle */}
+              <div className="absolute w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-full z-10"></div>
+              {/* Line */}
+              {index !== experienceData.length - 1 && (
+                <div className="absolute left-1/2 top-4 w-0.5 h-16 sm:h-20 bg-white -translate-x-1/2"></div>
+              )}
             </div>
           </div>
+          <div className="ml-6 sm:ml-8">
+            <div className="text-base sm:text-lg font-semibold text-black">{item.period}</div>
+            <div className="text-sm sm:text-base text-black">{item.role}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+          
         </div>
       </div>
 

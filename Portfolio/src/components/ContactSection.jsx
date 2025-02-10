@@ -117,12 +117,12 @@ const ContactSection = () => {
             {errors.message && <p className="mt-1 text-sm text-yellow-300">{errors.message}</p>}
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-start ">
             <ReCAPTCHA ref={recaptchaRef} sitekey="6LddOLsqAAAAAIB0TYpW8b92A3RREM0Az4Ua9fyM" onChange={handleCaptchaChange} theme="light" />
           </div>
 
           <div>
-            <button type="submit" disabled={!isCaptchaVerified} className={`w-full py-2 px-4 border rounded-md text-white 
+            <button type="submit" disabled={!isCaptchaVerified} className={`w-full py-2 px-4 border rounded-md text-white mt-2
               ${isCaptchaVerified ? 'bg-indigo-600 hover:bg-indigo-700' : 'bg-indigo-400 cursor-not-allowed'}`}>
               Send Message
             </button>

@@ -25,7 +25,7 @@ const Homepage = () => {
 
   const additionalProjects = [
     {
-      title: "Work-Based Projects",
+      title: "Work-Based Projects (UI UX)",
       image: "/assets/WorkBased.png",
       link: "workBasedProjects"
     },
@@ -71,9 +71,10 @@ const Homepage = () => {
       <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:mr-8 text-center lg:text-left">
           <h1 className="text-4xl lg:text-7xl font-extrabold">Hi I'm Kurt!!</h1>
-          <p className="text-lg lg:text-2xl mt-6 max-w-2xl">
+          <p className="text-lg lg:text-2xl mt-6 max-w-2xl font-light">
             A Junior Web Developer with expertise in UI/UX design, skilled in ReactJS, JavaScript, Git, TailwindCSS, and Figma. I also have experience in Photoshop for design and editing. Currently pursuing a degree in Information Systems, I'm passionate about creating responsive, user-friendly websites.
           </p>
+
         </div>
         <div className="mt-8 lg:mt-0">
           <img
@@ -104,7 +105,7 @@ const Homepage = () => {
           <img
             src="/assets/Javascript.png"
             alt="JavaScript"
-            className="w-24 h-27 lg:w-32 lg:h-27 object-cover"
+            className="w-24 h-23 lg:w-32 lg:h-23 object-cover"
           />
           <img
             src="/assets/Figma.png"
@@ -116,42 +117,33 @@ const Homepage = () => {
             alt="Photoshop"
             className="w-24 h-24 lg:w-32 lg:h-32 object-cover"
           />
+          <img
+          src="/assets/NextJS.png"
+          alt="NextJS"
+          className="h-36 w-28 lg:w-36 lg:h-36 object-cover"
+          />
         </div>
       </div>
 
       <div className="text-center text-4xl lg:text-7xl font-extrabold mt-14">
         My Projects
       </div>
-      <p className="text-lg lg:text-2xl mt-4 max-w-3xl mx-auto text-center">
+      <p className="text-lg lg:text-2xl font-light  mt-4 max-w-3xl mx-auto text-center">
         In this section, I present my academic and freelance projects, showcasing the range of skills I've developed through both educational and professional experiences.
       </p>
 
-      {/* First Grid - Main Portfolio Items */}
-      <div className="container mx-auto px-4">
-        <div className="mt-36 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {mainPortfolioItems.map((item, index) => (
-            <ProjectCard key={index} item={item} />
-          ))}
-        </div>
-      </div>
 
-      {/* Second Grid - Additional Projects */}
-      <div className="container mx-auto px-4">
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {additionalProjects.map((item, index) => (
-            <ProjectCard key={index} item={item} />
-          ))}
-        </div>
-      </div>
-
-{/* Third Grid - Side Projects */}
-<div className="container mx-auto px-4 flex flex-wrap justify-center gap-8 mt-16">
-  {sideProjects.map((item, index) => (
-    <div key={index} className="w-full max-w-[445px]">
-      <ProjectCard item={item} />
-    </div>
-  ))}
+      {/* Unified Portfolio Grid */}
+<div className="container mx-auto px-4">
+  <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    {[...mainPortfolioItems, ...additionalProjects, ...sideProjects].map((item, index) => (
+      <ProjectCard key={index} item={item} />
+    ))}
+  </div>
 </div>
+
+
+
 
 
 
@@ -202,16 +194,7 @@ const Homepage = () => {
 
 
 
-
-
-
-
 <ContactSection/>
-
-
-
-
-
 
 
 

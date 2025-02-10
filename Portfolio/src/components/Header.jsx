@@ -5,9 +5,9 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#282828] text-white h-auto lg:h-36">
+    <header className="bg-[#282828] text-white h-auto lg:h-28">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-36">
+        <div className="flex justify-between items-center h-28">
           <a href="/" className="text-3xl font-extrabold hover:text-gray-400 transition-colors">
             PORTFOLIO
           </a>
