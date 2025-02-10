@@ -71,7 +71,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="mt-36 flex px-4 items-center flex-col lg:flex-row gap-10 container mx-auto relative">
+    <div className="mt-24 flex px-4 items-center flex-col lg:flex-row gap-10 container mx-auto relative">
       {notification && (
         <div className={`fixed top-4 right-4 z-50 w-96 p-4 rounded-lg shadow-lg transition-opacity duration-500 ease-in-out 
           ${notification.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}>

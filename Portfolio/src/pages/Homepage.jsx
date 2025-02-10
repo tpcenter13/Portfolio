@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';  // Change this import
 import Header from '../components/Header';
 import Footer2 from '../components/Footer2';
 import ContactSection from '../components/ContactSection';
+import TechStackCarousel from '../components/TechStackCarusel';
 
 const Homepage = () => {
   const mainPortfolioItems = [
@@ -85,45 +86,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="bg-[#F94E41] p-6 mt-8 text-center">
-        <div className="flex flex-wrap justify-center gap-8">
-          <img
-            src="/assets/ReactIcon.png"
-            alt="React Icon"
-            className="w-24 h-24 lg:w-32 lg:h-32 object-cover"
-          />
-          <img
-            src="/assets/Tailwindcss.png"
-            alt="TailwindCSS"
-            className="w-45 h-24 lg:w-45 lg:h-32 object-cover"
-          />
-          <img
-            src="/assets/Github.png"
-            alt="GitHub"
-            className="w-24 h-24 lg:w-32 lg:h-32 object-cover"
-          />
-          <img
-            src="/assets/Javascript.png"
-            alt="JavaScript"
-            className="w-24 h-23 lg:w-32 lg:h-23 object-cover"
-          />
-          <img
-            src="/assets/Figma.png"
-            alt="Figma"
-            className="w-45 h-24 lg:w-45 lg:h-32 object-cover"
-          />
-          <img
-            src="/assets/Photoshop.png"
-            alt="Photoshop"
-            className="w-24 h-24 lg:w-32 lg:h-32 object-cover"
-          />
-          <img
-          src="/assets/NextJS.png"
-          alt="NextJS"
-          className="h-36 w-28 lg:w-36 lg:h-36 object-cover"
-          />
-        </div>
-      </div>
+<TechStackCarousel/>
 
       <div className="text-center text-4xl lg:text-7xl font-extrabold mt-14">
         My Projects
@@ -137,10 +100,16 @@ const Homepage = () => {
 <div className="container mx-auto px-4">
   <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
     {[...mainPortfolioItems, ...additionalProjects, ...sideProjects].map((item, index) => (
-      <ProjectCard key={index} item={item} />
+      <div 
+        key={index} 
+        className="transform transition duration-300 hover:scale-105 hover:shadow-lg"
+      >
+        <ProjectCard item={item} />
+      </div>
     ))}
   </div>
 </div>
+
 
 
 
