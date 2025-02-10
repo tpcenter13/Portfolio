@@ -5,6 +5,7 @@ import Footer2 from '../components/Footer2';
 import ContactSection from '../components/ContactSection';
 import TechStackCarousel from '../components/TechStackCarusel';
 
+
 const Homepage = () => {
   const mainPortfolioItems = [
     {
@@ -102,7 +103,7 @@ const Homepage = () => {
     {[...mainPortfolioItems, ...additionalProjects, ...sideProjects].map((item, index) => (
       <div 
         key={index} 
-        className="transform transition duration-300 hover:scale-105 hover:shadow-lg"
+        className="transform transition duration-300 lg:hover:scale-105 lg:hover:shadow-lg" // Hover effect only on lg+
       >
         <ProjectCard item={item} />
       </div>
@@ -116,8 +117,7 @@ const Homepage = () => {
 
 
 
-
-      <div className="relative bg-[#282828] text-white mt-36">
+<div className="relative bg-[#282828] text-white mt-36">
   {/* Slanted Shape */}
   <div className="relative">
     <div className="absolute top-0 left-0 w-full h-[150px] bg-[#282828]" />
@@ -160,6 +160,7 @@ const Homepage = () => {
     borderTop: "100px solid #282828", // Adjusted height
   }}
 ></div>
+
 
 
 
