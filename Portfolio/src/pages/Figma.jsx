@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer2 from '../components/Footer2';
-import { Link } from 'react-router-dom';
+
 
 const Figma = () => {
   return (
@@ -10,7 +10,7 @@ const Figma = () => {
 
       {/* Main Content Area */}
       <div className="mb-25 text-center p-8 lg:p-32 rounded-lg shadow-md" style={{ backgroundColor: '#030303' }}>
-        <h1 className="text-3xl lg:text-5xl font-extrabold text-white">Figma</h1>
+        <h1 className="text-3xl lg:text-5xl font-extrabold text-white">Figma (School Works) </h1>
       </div>
 
       {/* Image Row 1 */}

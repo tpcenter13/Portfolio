@@ -45,6 +45,11 @@ const PhotoEditing = () => {
         <img src="/assets/SgCybersecurityBG.png" alt="Image 1" className="w-full sm:w-2/4 lg:w-2/4 rounded-lg shadow-md" />
       </div>
 
+      <div className="mt-16 flex justify-center mb-28">
+    <img src="/assets/jakebanner.png" alt="Image 1" className="w-full sm:w-3/4 lg:w-3/4 rounded-lg shadow-md" />
+</div>
+
+
 
       <Footer2 />
     </div>

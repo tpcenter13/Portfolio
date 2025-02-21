@@ -14,7 +14,7 @@ const Homepage = () => {
       link: "photoEditing"
     },
     {
-      title: "Figma",
+      title: "Figma School Works",
       image: "/assets/Figma1.png",
       link: "figma"
     },

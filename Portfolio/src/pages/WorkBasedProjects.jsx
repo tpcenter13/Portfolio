@@ -135,6 +135,24 @@ const WorkbasedProjects = () => {
         </a>
       </div>
 
+    {/* Image Row 1 */}
+    <div className="mt-16 flex flex-wrap justify-center gap-8 mb-20">
+        <img src="/assets/jake1.png" alt="Image 1" className="w-full sm:w-1/2 lg:w-2/3 rounded-lg shadow-md" />
+      </div>
+
+      {/* Image Row 1 */}
+      <div className="mt-16 flex flex-wrap justify-center gap-8 mb-9">
+        <img src="/assets/jake4.png" alt="Image 1" className="w-full sm:w-1/2 lg:w-1/3 rounded-lg shadow-md" />
+        <img src="/assets/jake3.png" alt="Image 2" className="w-full sm:w-1/2 lg:w-1/3 rounded-lg shadow-md" />
+      </div>
+
+        {/* Description Section 1 */}
+      <div className="mb-28 px-6 sm:px-12 md:px-20 lg:px-36 xl:px-48 text-center">
+        <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white leading-relaxed">
+        For this project, I enhanced the website’s design to improve its visual appeal and user experience. I also implemented additional features, such as dedicated article pages, to better showcase the organization's content. Additionally, I redesigned and edited banners using Photoshop to align with the website's aesthetic. This project was created for an organization to serve as a platform for publishing their articles efficiently.
+        </p>
+      </div>
+
       <Footer2 />
     </div>
   );
