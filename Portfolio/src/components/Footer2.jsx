@@ -12,24 +12,63 @@ const Footer2 = () => {
 
   return (
     <div className="relative bg-[#282828] text-white w-full">
-      {/* Slanted Shape */}
-      <div className="relative">
-        <div className="absolute top-0 left-0 w-full h-[150px] bg-[#282828]" />
-      </div>
+      
+{/* Slanted Shape */}
+<div className="relative">
+  <div className="absolute top-0 left-0 w-full h-[150px] bg-[#282828]" />
 
-      <div className="my-8" />
+  {/* Left Polygon - Adjusted for small screens */}
+  <div
+    className="absolute top-[-29px] w-full h-[60px] sm:hidden"
+    style={{
+      background: "linear-gradient(to top, transparent 50%, #282828 50%)",
+      clipPath: "polygon(0 0, 50% 50%, 0 100%)",
+    }}
+  />
 
-      {/* Main Footer Content */}
-      <div className="relative px-4 md:px-[7%] pt-10 pb-5 my-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Footer Description */}
-          <div className="space-y-4">
-            <p className="text-[15px] leading-relaxed">
-              Showcasing innovative designs and efficient web solutions. Explore my
-              projects and skills in UI/UX design, web development, and e-commerce platforms.
-              Let's create something extraordinary!
-            </p>
-          </div>
+  {/* Right Polygon - Adjusted for small screens */}
+  <div
+    className="absolute top-[-29px] w-full h-[60px] sm:hidden"
+    style={{
+      background: "linear-gradient(to top, transparent 50%, #282828 50%)",
+      clipPath: "polygon(100% 0, 100% 100%, 50% 50%)",
+    }}
+  />
+
+  {/* Left Polygon - Adjusted for medium & large screens */}
+  <div
+    className="absolute top-[-40px] w-full h-[100px] hidden sm:block md:h-[120px] md:top-[-60px]"
+    style={{
+      background: "linear-gradient(to top, transparent 50%, #282828 50%)",
+      clipPath: "polygon(0 0, 50% 50%, 0 100%)",
+    }}
+  />
+
+  {/* Right Polygon - Adjusted for medium & large screens */}
+  <div
+    className="absolute top-[-40px] w-full h-[100px] hidden sm:block md:h-[120px] md:top-[-60px]"
+    style={{
+      background: "linear-gradient(to top, transparent 50%, #282828 50%)",
+      clipPath: "polygon(100% 0, 100% 100%, 50% 50%)",
+    }}
+  />
+</div>
+
+    <div className="my-8" />
+
+    {/* Main Footer Content */}
+    <div className="relative px-4 md:px-[7%] pt-10 pb-5 my-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Footer Description */}
+        <div className="space-y-4">
+          <p className="text-[15px] leading-relaxed">
+            Showcasing innovative designs and
+            efficient web solutions. Explore my
+            projects and skills in UI/UX design,
+            web development, and e-commerce platforms.
+            Let's create something extraordinary!
+          </p>
+        </div>
 
           {/* Course Categories */}
           <div className="space-y-4 ml-0 sm:ml-4 md:ml-8 lg:ml-11">
