@@ -9,7 +9,9 @@ const TechStackCarousel = () => {
     { src: "/assets/Javascript.png", alt: "JavaScript", width: 100, height: 120 },
     { src: "/assets/Figma.png", alt: "Figma", width: 160, height: 128 },
     { src: "/assets/Photoshop.png", alt: "Photoshop", width: 100, height: 120 },
-    { src: "/assets/NextJS.png", alt: "NextJS", width: 120, height: 140 }
+    { src: "/assets/Type.png", alt: "TypeScript", width: 120, height: 160 },
+    { src: "/assets/Nodejs.png", alt: "NodeJs Express", width: 120, height: 140 },
+    { src: "/assets/mysql1.png", alt: "MySql", width: 120, height: 140 },
   ];
 
   return (

@@ -91,17 +91,30 @@ const Footer2 = () => {
             </div>
           </div>
 
-          {/* Tools */}
+              {/* Tools */}
           <div className="space-y-4 ml-0 sm:ml-6 md:ml-10 lg:ml-14">
-            <h1 className="text-[20px] font-bold">Tools</h1>
-            <div className="flex flex-col gap-2 text-[15px]">
-              {["React JS", "TailwindCss", "Github", "JavaScript", "Photoshop", "Figma", "NextJS"].map((tool) => (
+            <h1 className="text-[20px] font-bold">Tech Stack</h1>
+              <div className="grid grid-cols-2 gap-2 text-[15px]">
+              {[
+                  "React JS",  
+                  "Next JS",  
+                  "TailwindCss",  
+                  "JavaScript",  
+                  "TypeScript",  
+                  "Node JS",  
+                  "Express Js",  
+                  "MySql",  
+                  "Github",  
+                  "Figma",  
+                  "Photoshop",  
+              ].map((tool) => (
                 <span key={tool} className="text-white font-normal">
                   {tool}
                 </span>
-              ))}
+                ))}
             </div>
           </div>
+
 
           {/* Connect with Me */}
           <div className="space-y-4">
@@ -191,7 +204,7 @@ const Footer2 = () => {
           <div className="text-sm">KURT ARCIGA</div>
 
           {/* Center Text */}
-          <div className="text-sm text-center">All rights reserved.</div>
+          <div className="text-sm text-center">All rights reserved</div>
 
           {/* Right Navigation */}
           <div className="flex items-center gap-6 text-sm">
