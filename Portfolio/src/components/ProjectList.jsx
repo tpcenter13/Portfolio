@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
     title: "PHOTOSHOP",
     description: "Proficient in Adobe Photoshop with experience in creating visually engaging designs for web and digital platforms.",
     image: "/assets/PhotoEditing.png",
-    link: "/photoEditing", // Corrected to relative route
+    link: "/photoEditing", // Local route using Link
     tools: ["Photoshop"]
   },
   {
@@ -24,7 +25,7 @@ const projects = [
   },
   {
     title: "Insightz Technology",
-    description: "I designed the website's layout, navigation, animation and user flow for Insightz Technology, a cybersecurity platform. I also created banners using Photoshop and handled the UI/UX design of their portal",
+    description: "I designed the website's layout, navigation, animation and user flow for Insightz Technology, a cybersecurity platform. I also created banners using Photoshop and handled the UI/UX design of their portal.",
     image: "/assets/website2.png",
     link: "https://www.figma.com/proto/aizc9imebHc1nKGnzCQLGp/Website?node-id=1-3&p=f&t=FKaGXCVuTTozmx1u-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3",
     tools: ["Photoshop", "Figma"]
@@ -53,14 +54,13 @@ const projects = [
 ];
 
 const ProjectCard = ({ project }) => {
-  // Check if the link is external (starts with http or https)
-  const isExternalLink = project.link.startsWith('http');
-  
-  return (
+  const isExternalLink = project.link.startsWith("http");
+
+  return isExternalLink ? (
     <a
       href={project.link}
-      target={isExternalLink ? "_blank" : "_self"}
-      rel={isExternalLink ? "noopener noreferrer" : ""}
+      target="_blank"
+      rel="noopener noreferrer"
       className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 h-full flex flex-col"
     >
       <img src={project.image} alt={project.title} className="w-full h-52 object-cover" />
@@ -70,15 +70,40 @@ const ProjectCard = ({ project }) => {
         <div className="mt-auto">
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tools.map((tool, index) => (
-              <span key={index} className="bg-gray-700 text-white px-3 py-1 text-xs rounded-full">{tool}</span>
+              <span key={index} className="bg-gray-700 text-white px-3 py-1 text-xs rounded-full">
+                {tool}
+              </span>
             ))}
           </div>
           <span className="text-[#CDA050] hover:text-[#ff6b5f] transition-colors duration-300">
-            {isExternalLink ? "Visit Project →" : "View Showcase →"}
+            Visit Project →
           </span>
         </div>
       </div>
     </a>
+  ) : (
+    <Link
+      to={project.link}
+      className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 h-full flex flex-col"
+    >
+      <img src={project.image} alt={project.title} className="w-full h-52 object-cover" />
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-semibold mb-4 text-[#000000]">{project.title}</h3>
+        <p className="text-sm text-gray-600 mb-4">{project.description}</p>
+        <div className="mt-auto">
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.tools.map((tool, index) => (
+              <span key={index} className="bg-gray-700 text-white px-3 py-1 text-xs rounded-full">
+                {tool}
+              </span>
+            ))}
+          </div>
+          <span className="text-[#CDA050] hover:text-[#ff6b5f] transition-colors duration-300">
+            View Showcase →
+          </span>
+        </div>
+      </div>
+    </Link>
   );
 };
 
