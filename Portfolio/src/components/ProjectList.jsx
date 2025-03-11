@@ -5,7 +5,7 @@ const projects = [
     title: "PHOTOSHOP",
     description: "Proficient in Adobe Photoshop with experience in creating visually engaging designs for web and digital platforms.",
     image: "/assets/PhotoEditing.png",
-    link: "/photoEditing",
+    link: "/photoEditing", // Corrected to relative route
     tools: ["Photoshop"]
   },
   {
