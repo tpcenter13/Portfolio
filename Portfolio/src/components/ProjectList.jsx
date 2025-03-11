@@ -1,12 +1,11 @@
 import React from "react";
 
-
 const projects = [
   {
     title: "PHOTOSHOP",
     description: "Proficient in Adobe Photoshop with experience in creating visually engaging designs for web and digital platforms.",
     image: "/assets/PhotoEditing.png",
-    link: "photoEditing",
+    link: "/photoEditing",
     tools: ["Photoshop"]
   },
   {
@@ -35,7 +34,7 @@ const projects = [
     description: "I contributed to this cybersecurity project as a Web Developer, handling frontend and backend development. I built features like online courses, a forum, and job search, ensuring seamless functionality from wireframes to deployment on Vercel.",
     image: "/assets/sg1.png",
     link: "https://sg-cybersecurity-2025.vercel.app/",
-    tools: ["NextJS" , "NodeJS" , "MySql" , "TypeScript" , "Javascript" , "Git" , "TailWindCss" , "Figma" ,"Photoshop"]
+    tools: ["NextJS", "NodeJS", "MySql", "TypeScript", "Javascript", "Git", "TailWindCss", "Figma", "Photoshop"]
   },
   {
     title: "FORTIMSS Shopping",
@@ -46,37 +45,42 @@ const projects = [
   },
   {
     title: "Kabataang Barangay Portal",
-    description: "For this project, I enhanced the website’s design for improved visual appeal and user experience. I also redesigned banners using Photoshop and added dedicated article pages to better showcase the organization's content.",
+    description: "For this project, I enhanced the website's design for improved visual appeal and user experience. I also redesigned banners using Photoshop and added dedicated article pages to better showcase the organization's content.",
     image: "/assets/jake4.png",
     link: "https://www.figma.com/proto/UZvOGCP3C68QpgfrBsH0jB/New-Project(Jake)?node-id=4-6499&p=f&t=gzw8wQ8KYJFBr8P0-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A6499",
-    tools: ["Photoshop" , "Figma" ,]
+    tools: ["Photoshop", "Figma"]
   },
 ];
 
-const ProjectCard = ({ project }) => (
-  <a
-    href={project.link}
-    target={project.link === "#" ? "_self" : "_blank"}
-    rel={project.link === "#" ? "" : "noopener noreferrer"}
-    className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 h-full flex flex-col"
-  >
-    <img src={project.image} alt={project.title} className="w-full h-52 object-cover" />
-    <div className="p-6 flex flex-col flex-grow">
-      <h3 className="text-xl font-semibold mb-4 text-[#000000]">{project.title}</h3>
-      <p className="text-sm text-gray-600 mb-4">{project.description}</p>
-      <div className="mt-auto">
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.tools.map((tool, index) => (
-            <span key={index} className="bg-gray-700 text-white px-3 py-1 text-xs rounded-full">{tool}</span>
-          ))}
+const ProjectCard = ({ project }) => {
+  // Check if the link is external (starts with http or https)
+  const isExternalLink = project.link.startsWith('http');
+  
+  return (
+    <a
+      href={project.link}
+      target={isExternalLink ? "_blank" : "_self"}
+      rel={isExternalLink ? "noopener noreferrer" : ""}
+      className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 h-full flex flex-col"
+    >
+      <img src={project.image} alt={project.title} className="w-full h-52 object-cover" />
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-semibold mb-4 text-[#000000]">{project.title}</h3>
+        <p className="text-sm text-gray-600 mb-4">{project.description}</p>
+        <div className="mt-auto">
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.tools.map((tool, index) => (
+              <span key={index} className="bg-gray-700 text-white px-3 py-1 text-xs rounded-full">{tool}</span>
+            ))}
+          </div>
+          <span className="text-[#CDA050] hover:text-[#ff6b5f] transition-colors duration-300">
+            {isExternalLink ? "Visit Project →" : "View Showcase →"}
+          </span>
         </div>
-        <span className="text-[#CDA050] hover:text-[#ff6b5f] transition-colors duration-300">
-          {project.link === "#" ? "View Showcase →" : "Visit Project →"}
-        </span>
       </div>
-    </div>
-  </a>
-);
+    </a>
+  );
+};
 
 const ProjectList = () => (
   <div className="container mx-auto px-4">
