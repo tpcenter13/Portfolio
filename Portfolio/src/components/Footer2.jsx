@@ -70,26 +70,49 @@ const Footer2 = () => {
           </p>
         </div>
 
-          {/* Course Categories */}
-          <div className="space-y-4 ml-0 sm:ml-4 md:ml-8 lg:ml-11">
-            <h1 className="text-[20px] font-bold">COURSE CATEGORIES</h1>
-            <div className="flex flex-col gap-2 text-[15px]">
-              {[
-                ["Home", "/"],
-                ["About", "/about"],
-                ["Photo Editing", "/photoEditing"],
-                ["Figma", "/figma"],
-                ["Basic Troubleshooting", "/basicTroubleshooting"],
-                ["Work-Based Projects", "/workBasedProjects"],
-                ["Website Development", "/websiteDevelopment"],
-                ["Mini Projects", "/miniprojects"]
-              ].map(([label, to]) => (
-                <Link key={to} to={to} className="text-white hover:underline transition-colors duration-200">
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
+
+
+{/* Course Categories */}
+<div className="space-y-4">
+  <h1 className="text-[20px] font-bold">PAGES</h1>
+  <div className="grid grid-cols-2 gap-y-1 gap-x-8 text-[15px]">
+    {[
+      ["Home", "/"],
+      ["About", "/about"],
+      ["Photo Editing", "/photoEditing"],
+      ["The OGSI", "https://www.figma.com/proto/0FCSEZSjK404P16cAG5WOc/OGSI?node-id=572-21867&p=f&t=oSRWvYrLfGbkarEh-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=572%3A21867"],
+      ["Pagsasaka", "https://www.figma.com/proto/lcBl97ZOx9l80oo7sWKHGI/Thesis?node-id=107-211&p=f&t=wAOCzHRFttnwKUYI-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=107%3A211"],
+      ["Insightz Tech", "https://www.figma.com/proto/aizc9imebHc1nKGnzCQLGp/Website?node-id=1-3&p=f&t=y4tcS3pUV7ABSci9-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3&show-proto-sidebar=1"],
+      ["SgCybersecurity", "https://sg-cybersecurity-2025.vercel.app/"],
+      ["Fortimss Shopping", "https://www.figma.com/proto/AZlJEHf9K0jNpRJFf6qP5E/Fortinet-Shopping?node-id=2452-8318&p=f&t=VVFeNFaLMMmPA26y-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2452%3A8318"],
+      ["KBPortal", "https://www.figma.com/proto/UZvOGCP3C68QpgfrBsH0jB/New-Project(Jake)?node-id=4-6499&p=f&t=gzw8wQ8KYJFBr8P0-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A6499"]
+    ].map(([label, href]) =>
+      href.startsWith("/") ? (
+        <Link
+          key={href}
+          to={href}
+          className="text-white hover:underline transition-colors duration-200"
+        >
+          {label}
+        </Link>
+      ) : (
+        <a
+          key={href}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:underline transition-colors duration-200"
+        >
+          {label}
+        </a>
+      )
+    )}
+  </div>
+</div>
+
+
+
+
 
               {/* Tools */}
           <div className="space-y-4 ml-0 sm:ml-6 md:ml-10 lg:ml-14">
