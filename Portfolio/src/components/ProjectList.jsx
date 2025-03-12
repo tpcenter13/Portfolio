@@ -41,7 +41,7 @@ const projects = [
     title: "FORTIMSS Shopping",
     description: "I designed the UI/UX and crafted a seamless user flow for this e-commerce platform, ensuring an intuitive and engaging experience. Additionally, I created visually compelling banners and graphics using Photoshop to enhance the platform's appeal.",
     image: "/assets/forti1.png",
-    link: "https://www.figma.com/proto/AZlJEHf9K0jNpRJFf6qP5E/Fortinet-Shopping?node-id=2452-8318&p=f&t=VVFeNFaLMMmPA26y-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2452%3A8318",
+    link: "https://www.figma.com/proto/AZlJEHf9K0jNpRJFf6qP5E/Fortinet-Shopping?node-id=736-3000&p=f&t=G54a77RMFVPO3uzQ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=736%3A3000",
     tools: ["Photoshop", "Figma"]
   },
   {

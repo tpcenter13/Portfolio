@@ -84,7 +84,7 @@ const Footer2 = () => {
       ["Pagsasaka", "https://www.figma.com/proto/lcBl97ZOx9l80oo7sWKHGI/Thesis?node-id=107-211&p=f&t=wAOCzHRFttnwKUYI-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=107%3A211"],
       ["Insightz Tech", "https://www.figma.com/proto/aizc9imebHc1nKGnzCQLGp/Website?node-id=1-3&p=f&t=y4tcS3pUV7ABSci9-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3&show-proto-sidebar=1"],
       ["SgCybersecurity", "https://sg-cybersecurity-2025.vercel.app/"],
-      ["Fortimss Shopping", "https://www.figma.com/proto/AZlJEHf9K0jNpRJFf6qP5E/Fortinet-Shopping?node-id=2452-8318&p=f&t=VVFeNFaLMMmPA26y-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2452%3A8318"],
+      ["Fortimss Shopping", "https://www.figma.com/proto/AZlJEHf9K0jNpRJFf6qP5E/Fortinet-Shopping?node-id=736-3000&p=f&t=G54a77RMFVPO3uzQ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=736%3A3000"],
       ["KBPortal", "https://www.figma.com/proto/UZvOGCP3C68QpgfrBsH0jB/New-Project(Jake)?node-id=4-6499&p=f&t=gzw8wQ8KYJFBr8P0-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A6499"]
     ].map(([label, href]) =>
       href.startsWith("/") ? (
