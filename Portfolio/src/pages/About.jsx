@@ -8,7 +8,7 @@ const About = () => {
 
   const skills = {
     programming: [
-      "PHP/SQL",
+      "Laravel (Backend)",
       "HTML/CSS/JavaScript/TypeScript",
       "React.JS & Tailwind CSS",
       "Next.JS",
@@ -24,7 +24,8 @@ const About = () => {
     systems: [
       "MS Excel",
       "GitHub",
-      "Computer System Servicing (CSS)"
+      "Computer System Servicing (CSS)",
+      "Postman"
     ]
   };
 

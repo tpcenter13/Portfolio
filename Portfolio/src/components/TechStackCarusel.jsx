@@ -12,6 +12,7 @@ const TechStackCarousel = () => {
     { src: "/assets/Type.png", alt: "TypeScript", width: 120, height: 160 },
     { src: "/assets/Nodejs.png", alt: "NodeJs Express", width: 120, height: 140 },
     { src: "/assets/mysql1.png", alt: "MySql", width: 120, height: 140 },
+    { src: "/assets/laravel1.png", alt: "MySql", width: 130, height: 150 },
   ];
 
   return (

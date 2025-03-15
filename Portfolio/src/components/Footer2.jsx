@@ -129,7 +129,8 @@ const Footer2 = () => {
                   "MySql",  
                   "Github",  
                   "Figma",  
-                  "Photoshop",  
+                  "Photoshop",
+                  "Laravel",   
               ].map((tool) => (
                 <span key={tool} className="text-white font-normal">
                   {tool}

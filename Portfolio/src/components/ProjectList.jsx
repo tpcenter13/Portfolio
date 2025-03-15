@@ -18,10 +18,10 @@ const projects = [
   },
   {
     title: "Pagsasaka E-Commerce",
-    description: "I designed the UI/UX for the Pagsasaka Website and mobile app.",
+    description: "I designed the UI/UX for the Pagsasaka website and mobile version (Logistics), and I also worked on the backend for this capstone project.",
     image: "/assets/Pagsasaka.png",
-    link: "https://www.figma.com/proto/lcBl97ZOx9l80oo7sWKHGI/Thesis?node-id=107-211&p=f&t=wAOCzHRFttnwKUYI-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=107%3A211",
-    tools: ["Photoshop", "Figma"]
+    link: "https://www.figma.com/proto/lcBl97ZOx9l80oo7sWKHGI/Thesis?node-id=1-4&t=Ia9V1DXceAEnXWlT-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=107%3A211",
+    tools: ["Photoshop", "Figma", "Laravel (BackEnd)"]
   },
   {
     title: "Insightz Technology",
